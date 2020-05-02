@@ -6,8 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CanvasComponent } from './canvas/canvas.component';
-import { MenuComponent } from './menu/menu.component';
-import { DialogueComponent } from './dialogue/dialogue.component';
+import { ButtonComponent } from './button/button.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
@@ -19,8 +19,8 @@ import { ColorPickerModule } from 'primeng/colorpicker';
   declarations: [
     AppComponent,
     CanvasComponent,
-    MenuComponent,
-    DialogueComponent
+    ButtonComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

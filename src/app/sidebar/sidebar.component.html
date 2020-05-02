@@ -1,4 +1,4 @@
-<p-sidebar [(visible)]="isVisible" position="right">
+<p-sidebar [(visible)]="isVisible" position="right" (onHide)="reset()">
   <h1>Add a box</h1>
   <div class="fieldset">
     <h3>Position</h3>

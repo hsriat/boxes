@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { BoxesService } from '../boxes.service';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  selector: 'app-button',
+  templateUrl: './button.component.html',
+  styleUrls: ['./button.component.scss']
 })
-export class MenuComponent implements OnInit {
+export class ButtonComponent implements OnInit {
 
   constructor(private boxesService: BoxesService) { }
 

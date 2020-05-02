@@ -4,11 +4,11 @@ import { BoxesService } from '../boxes.service';
 import { DrawableBox } from '../drawable-box';
 
 @Component({
-  selector: 'app-dialogue',
-  templateUrl: './dialogue.component.html',
-  styleUrls: ['./dialogue.component.scss']
+  selector: 'app-sidebar',
+  templateUrl: './sidebar.component.html',
+  styleUrls: ['./sidebar.component.scss']
 })
-export class DialogueComponent implements OnInit, OnDestroy {
+export class SidebarComponent implements OnInit, OnDestroy {
 
   public isVisible = false;
   private defaultBox: DrawableBox = {
