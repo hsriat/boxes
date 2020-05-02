@@ -37,7 +37,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
     this.subscriptions.forEach((sub) => sub.unsubscribe());
   }
 
-  private reset(): void {
+  public reset(): void {
     this.newBox = { ...this.defaultBox };
     this.isVisible = false;
   }
