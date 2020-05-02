@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+$yellow: #f4bc6e;
+$red: #d05d51;
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.ui-button {
+  color: $red !important;
+  border-radius: 0 !important;
+  user-select: none !important;
+}
+
+*:not(.pi) {
+  font-family: Muli !important;
+}
+
+.ui-sidebar-right {
+  border-left: $yellow solid 1rem !important;
+}
+
+.ui-button-warning {
+  background-color: $yellow !important;
+  border-color: $yellow !important;
+}

@@ -1,0 +1,48 @@
+<p-sidebar [(visible)]="isVisible" position="right">
+  <h1>Add a box</h1>
+  <div class="fieldset">
+    <h3>Position</h3>
+    <div class="ui-fluid">
+      <div>
+        <input type="text" pInputText pKeyFilter="int" placeholder="x" [(ngModel)]="newBox.x">
+      </div>
+      <div>
+        <input type="text" pInputText pKeyFilter="int" placeholder="y" [(ngModel)]="newBox.y">
+      </div>
+    </div>
+  </div>
+  <div class="fieldset">
+    <h3>Dimensions</h3>
+    <div class="ui-fluid">
+      <div>
+        <input type="text" pInputText pKeyFilter="int" placeholder="width" [(ngModel)]="newBox.width">
+      </div>
+      <div>
+        <input type="text" pInputText pKeyFilter="int" placeholder="height" [(ngModel)]="newBox.height">
+      </div>
+    </div>
+  </div>
+  <div class="fieldset">
+    <h3>Colour fill</h3>
+    <div>
+      <p-colorPicker [(ngModel)]="newBox.colour"></p-colorPicker><span class="colour-hex">&nbsp;{{newBox.colour}}</span>
+    </div>
+  </div>
+  <div class="fieldset">
+    <button
+      pButton
+      type="button"
+      class="ui-button-warning"
+      label="Add"
+      (click)="hideDialogue(true)"
+    ></button>
+    <button
+      pButton
+      type="button"
+      class="ui-button-secondary"
+      label="Cancel"
+      (click)="hideDialogue(false)"
+    ></button>
+  </div>
+
+</p-sidebar>
