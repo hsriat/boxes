@@ -4,10 +4,10 @@
     <h3>Position</h3>
     <div class="ui-fluid">
       <div>
-        <input type="text" pInputText pKeyFilter="int" placeholder="x" [(ngModel)]="newBox.x">
+        <input type="text" pInputText pKeyFilter="int" placeholder="x" [(ngModel)]="x">
       </div>
       <div>
-        <input type="text" pInputText pKeyFilter="int" placeholder="y" [(ngModel)]="newBox.y">
+        <input type="text" pInputText pKeyFilter="int" placeholder="y" [(ngModel)]="y">
       </div>
     </div>
   </div>
@@ -15,19 +15,28 @@
     <h3>Dimensions</h3>
     <div class="ui-fluid">
       <div>
-        <input type="text" pInputText pKeyFilter="int" placeholder="width" [(ngModel)]="newBox.width">
+        <input type="text" pInputText pKeyFilter="int" placeholder="width" [(ngModel)]="width">
       </div>
       <div>
-        <input type="text" pInputText pKeyFilter="int" placeholder="height" [(ngModel)]="newBox.height">
+        <input type="text" pInputText pKeyFilter="int" placeholder="height" [(ngModel)]="height">
       </div>
     </div>
   </div>
   <div class="fieldset">
     <h3>Colour fill</h3>
     <div>
-      <p-colorPicker [(ngModel)]="newBox.colour"></p-colorPicker><span class="colour-hex">&nbsp;{{newBox.colour}}</span>
+      <p-colorPicker [(ngModel)]="colour"></p-colorPicker><span class="colour-hex">&nbsp;{{colour}}</span>
     </div>
   </div>
+<!--  <div class="fieldset">-->
+<!--    <h3>Label</h3>-->
+<!--    <div>-->
+<!--      <p-colorPicker [(ngModel)]="labelColour"></p-colorPicker><span class="colour-hex">&nbsp;{{labelColour}}</span>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <input type="text" pInputText placeholder="text" [(ngModel)]="labelText">-->
+<!--    </div>-->
+<!--  </div>-->
   <div class="fieldset">
     <button
       pButton

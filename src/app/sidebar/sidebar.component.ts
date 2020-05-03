@@ -18,7 +18,12 @@ export class SidebarComponent implements OnInit, OnDestroy {
     height: 100,
     colour: '#d05d51'
   };
-  public newBox: DrawableBox;
+
+  public x: string;
+  public y: string;
+  public height: string;
+  public width: string;
+  public colour: string;
 
   private subscriptions: Array<Subscription>;
 
@@ -38,13 +43,25 @@ export class SidebarComponent implements OnInit, OnDestroy {
   }
 
   public reset(): void {
-    this.newBox = { ...this.defaultBox };
+    const { x, y, height, width, colour } = this.defaultBox;
+    this.x = x.toString();
+    this.y = y.toString();
+    this.height = height.toString();
+    this.width = width.toString();
+    this.colour = colour;
     this.isVisible = false;
   }
 
   public hideDialogue(action: boolean) {
     if (action) {
-      this.boxesService.createBox.next(this.newBox);
+      const { x, y, width, height, colour } = this;
+      this.boxesService.createBox.next({
+        x: parseInt(x, 10),
+        y: parseInt(y, 10),
+        width: parseInt(width, 10),
+        height: parseInt(height, 10),
+        colour
+      });
     }
     this.reset();
   }
