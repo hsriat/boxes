@@ -38,8 +38,9 @@ export class CanvasComponent implements AfterViewInit, OnInit, OnDestroy {
     this.ctx.fillStyle = colour;
     this.ctx.fillRect(x, y, width, height);
     // this.ctx.fillStyle = label.colour;
+    // this.ctx.font = '24px Muli';
     // this.ctx.textAlign = 'center';
-    // this.ctx.fillText(label.text, x + (height / 2), y + (width / 2));
+    // this.ctx.fillText(label.text, x + (width / 2), y + (height / 2) + 10);
   }
 
   private  getContext(): CanvasRenderingContext2D {
